@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
    padding: 10px;
@@ -68,7 +69,8 @@ section{
      padding:5px;
     border-radius: 5px;
     background-color: rgb(223 223 221);
-    margin:10px 0;
+     margin:8px 0;
+    
 }
 .width70{
     width: 70%;
@@ -76,3 +78,60 @@ section{
 .margintb{
     padding:15px 0 0 0;
 }
+.width100{
+    width: 100%;
+    float: left;   
+}
+.row{
+     width: 100%;
+     float: left;   
+}
+.item{
+         width:33%;       
+         float: left;
+       
+}
+.padding-right-30{
+    padding-right:30px
+}
+.item-inner{
+   
+    
+}
+.item-inner>.pimage{
+
+    width: 100%;
+    padding: 100px 0;
+    background-color:rgb(189 190 192) ;
+    float: left;
+    margin-bottom:10px
+
+}
+
+.item-inner>h2{
+    padding:15px;
+    float: left;
+    width: 60%;
+    background-color: rgb(189 190 192);
+    border-radius: 5px;
+    
+}
+
+/*
+    box-size
+
+        contetn-box
+     width+padding-left+padding-right+border-left+border-right+margin-left+margin-right
+       200+ 10+10+ 1+1+10+10= 242;
+    
+
+
+    boder-box
+    {
+        200
+        =148+10+10+1+1+10+10
+    }
+    
+
+
+*/
