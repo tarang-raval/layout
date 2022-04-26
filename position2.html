@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;     /*content-box |border-box */
+        }
+        .row{
+            float: left;
+            width: 100%;
+        }
+        .width50{
+             width: 100%;
+                padding: 25px;
+             background-color: brown;
+                position: relative;
+             
+             float: left;
+            
+             /* width :  200+20+20+5+5*/ 
+
+             /*     200 -40px-40px-5-5 */
+        }
+        .col6{
+            width: 50%;
+        float: left;
+        }
+        .col6 p{
+            padding: 10px;
+            margin:10px;
+            background-color: aqua;
+        }
+        .bg-white{
+            background-color: #FFF;
+            padding: 200px;
+            border: 10px solid;
+            width: 30%;
+            position: absolute;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div  class="row">
+        <div class="col width50">
+
+            <div class="col6">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="col6 bg-white">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
