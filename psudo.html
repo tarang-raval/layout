@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   /*  a{
+         text-decoration: none;
+         color: #000;
+         border: 1px solid brown;
+    } */
+    
+     /*  a:link {
+         color: cornflowerblue;
+    }
+    a:visited{
+         color: green;
+    }
+    a:hover{
+          background-color: brown;
+          color: #FFF;
+          padding: 10px;
+          
+    }
+    a:active{
+        color: cyan;
+    } */
+    a.link:visited{
+        color: red;
+    }
+    a.link:hover{
+        color:green;
+    }
+    a.link:active{
+        color: red;
+    }
+    .box{
+        background-color: burlywood;
+        padding: 10px;
+    }
+    .desc{
+        display: none;
+    }
+    .box:hover>.desc{
+        background-color: brown ;
+        display: block;
+        
+    }
+    li:first-child{
+        color: aquamarine;
+        background-color: blue;
+    }
+    li:nth-child(4n+1){
+        color: aquamarine;
+        background-color: blue;
+    }
+</style>
+</head>
+<body>
+    <a href="https://google.com">Unvisited Link</a>
+    <a href="https://yahoo.com">Unvisited</a>
+
+    <a href="" class="link">Link a</a>
+
+
+    <div class="box">
+        <div class="desc">
+            <p>Google</p>
+            <p>Google</p>
+            <p>Google</p>
+            <p>Google</p>
+        </div>
+        
+    </div>
+
+
+
+    <ul class="m">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <ol>
+        <li>hsfb</li>
+        <li>hsfb</li>
+        <li>hsfb</li>
+    </ol>
+    
+
+    
+</body>
+</html>
