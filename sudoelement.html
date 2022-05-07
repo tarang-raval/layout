@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 
+            ::after
+            ::before
+            selector::after
+         */
+         *{
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
+         img{
+             max-width: 100%;
+             margin:auto;
+         }
+         p{
+             
+             padding: 0 10px;
+         }
+         p::after{
+             /* content: url(img/border.png); */
+             /* content: '';
+             border: 1px solid red; */
+         }
+         p::before{
+             /* content: url(img/border.png); */
+             content: '';
+             border: 1px solid red;
+             margin-right: 10px;
+             display: block;
+             width: 20%;
+         }
+         .img{
+             position: relative;
+         }
+         .img::after{
+              content: '';
+              background-color: rgba(49, 49, 49, 0.219);
+              position: absolute;
+              top: 0;
+              right:0;
+              bottom: 0;
+              left: 0;
+              margin-bottom: 10px;
+         }
+         h2{
+            position: relative;
+            margin-right: 20px;
+            border-bottom: 1px solid  ;
+         }
+
+         h2::after{
+             content: ' ';
+             /* width: 10px;
+             height: 10px; */
+                width: 10%;
+             /* border-radius: 50%; */
+            border-top: 1px dashed cadetblue;
+             background-color: cadetblue;
+             display: block;
+             /* position: absolute; */
+             bottom: 0;
+             /* margin-left: 10px; */
+             
+             
+         }
+    </style>
+</head>
+<body>
+
+    <p>Heloo</p>
+    <div class="img">
+        <img src="img/forest-back.jpg">
+    </div>
+
+    <h2>Header</h2>
+    <h2>Header heading css heading css</h2>
+</body>
+</html>

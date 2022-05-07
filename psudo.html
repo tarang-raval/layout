@@ -56,7 +56,37 @@
         color: aquamarine;
         background-color: blue;
     }
+
+    .parent :nth-child(2){
+             background-color: brown;
+    }
+    .parent div:nth-of-type(1){
+             background-color: violet;
+    }
+    input:focus{
+        background-color: red ;
+        border: 1px solid red;
+        outline: 1px solid rgb(55, 0, 255);
+        color: #FFF;
+    }
+    :disabled{
+        background-color: rgba(0, 0, 0, 0.203);
+    }
+    :required{
+        background-color: aquamarine;
+    }
+     ::placeholder{
+        color:red;
+    }
+    input{
+        color: red;
+    }
+    .parent1 p:not(.p){
+        color: aqua;
+    }
+
 </style>
+
 </head>
 <body>
     <a href="https://google.com">Unvisited Link</a>
@@ -93,7 +123,35 @@
         <li>hsfb</li>
     </ol>
     
+    <div class="parent">
+        <p>sajfbdf</p>    <!-- 1 st child-->
+        <p>dfnksnbdfjksd</p>  <!-- 2 st child-->
+        <div class="child">1</div>   <!-- 3 rd child  1 st child-->
+        <div class="child ">2</div> <!--  4 th child  2 nd child-->
+        <div class="child parent"> <!--  5 th child 3th child-->
+            <div class="child subchild">1</div> <!-- 1 st child-->
+            <div class="child subchild">2</div> <!-- 2nd child-->
+            <div class="child subchild">3</div> <!-- 3 st child-->
+        </div>
+    </div>
 
-    
+
+    <form>
+        <input type="text"  required placeholder="enter name"> 
+        <br/>
+        <input type="password" disabled>
+    </form>
+
+    <button disabled>Disabled</button>
+
+
+    <div class="parent1">
+            <p class="p">sss</p>
+            <p class="p a">sss</p>
+            <p class="p">sss</p>
+            <p class="p">sss</p>
+            <p class="p">sss</p>
+            <p class="p">sss</p>
+    </div>
 </body>
 </html>
