@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       [target="_blank"]{
+            color: red;
+            text-decoration: none;
+       }
+       input{
+           border: 1px solid;
+       }
+       input[type="number"]{
+        border: 1px solid red;
+       }
+      /*  [title~='word']{
+           color:brown;
+       } */
+       [title|=word]{
+           color:brown;
+       }
+
+       /*
+             class
+             id
+             tagname
+             inline style sheet
+
+       */
+
+       p{ /* 3 */
+            color: aquamarine !important;
+       }
+       .p{ /* 2 */
+           color: blue !important;
+       }
+       #p{    /* 1*/
+            color: initial;
+       }
+
+
+    </style>
+</head>
+<body>
+        <p name class="a"></p>
+        <a href="#" target="_blank">blank</a>
+        <a href="#" >Normal</a>
+        <a href="#" >Normal</a>
+        <a href="#" target="_blank">blank</a>
+    
+        <input type="text" name="abc" >
+        <input type="number" name="number" >
+        <input type="email" name="email" >
+
+
+        <p title="word paragraph">Titlte attribute is here</p>
+        <p title="word-sdfsd">Titlte attribute is here</p>
+
+
+        <p class="p" id="p" style="color:green;">skjdnfjklsdnfsjkldnfsd</p>
+
+        
+    
+
+
+</body>
+</html>
